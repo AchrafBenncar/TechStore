@@ -1,0 +1,1 @@
+const slideBarLinks = document.querySelectorAll(".sidebar-links") ;
