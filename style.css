@@ -8,6 +8,8 @@
 body{
   min-height: 100vh;
   background-color:#d2d2d2 ;
+  margin-left: 250px;
+  margin-top: 50px;
 }
 .sidebar{
   position: fixed;
@@ -46,7 +48,6 @@ body{
   height: 80%;
   scrollbar-width: none;
 }
-
 .sidebar:hover .sous-menu-separator{
   transform: scale(0);
 }
@@ -85,3 +86,215 @@ body{
   font-size: 0.775rem;
   font-weight: 500;
 }
+.action{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  margin: 10px 0;
+}
+.add-product{
+  background-color: green;
+  color: #fff;
+  margin: 10px 0;
+  padding: 5px 10px;
+  border: none;
+  font-weight: 500;
+  font-size: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0 , 0 ,0 , 0.5);
+  display: flex;
+}
+.search-product{
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+  box-shadow: 0 0 5px rgba(0 , 0 ,0 , 0.5);
+  border: 1px solid black;
+  padding: 7px 15px;
+  border-radius: 4px;
+  background-color: #fff;
+}
+.search-product input{
+  border: none;
+  outline: none;
+}
+.cat-select{
+  padding: 10px 15px;
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 2px 3px rgba(0 , 0, 0, 0.2);
+}
+.products{
+  display: none;
+  flex-flow: row wrap;
+  gap:  10px;
+}
+.product{
+  flex: 150px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0 , 0 ,0 , 0.5) ;
+  margin: 15px 20px;
+  padding: 10px;
+  transition: all 0.5s linear;
+  position: relative;
+}
+.edit-product{
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: skyblue;
+  cursor: pointer;
+}
+.products.show{
+  display: flex;
+}
+.product img{
+  width: 50%;
+  height: 40%;
+}
+.title{
+  text-align: center;
+  font-size: 20x;
+}
+.btn-delete{
+  background-color: red;
+  color: #fff;
+  margin: 10px 0;
+  padding: 10px 25px;
+  border: none;
+  font-weight: 500;
+  font-size: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0 , 0 ,0 , 0.5);
+}
+.category-box {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 14px;
+  max-width: 600px;
+  margin: 40px auto;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.add-category {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.add-category input {
+  flex: 1;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  outline: none;
+}
+
+.add-category input:focus {
+  border-color: #4f46e5;
+}
+
+.add-cat-btn {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 10px;
+  background: #4f46e5;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.add-cat-btn:hover {
+  background: #4338ca;
+}
+
+.category-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.category-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8fafc;
+  padding: 14px 18px;
+  border-radius: 10px;
+}
+
+.category-item span {
+  font-size: 15px;
+  font-weight: 500;
+  color: #1f2937;
+  text-transform: capitalize;
+}
+
+.delete-cat {
+  background: #ef4444;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.delete-cat:hover {
+  background: #dc2626;
+}
+.kpi-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+
+.kpi-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.kpi-card h3 {
+  font-size: 15px;
+  color: #6b7280;
+  margin-bottom: 10px;
+}
+
+.kpi-card p {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.chart-box {
+  background: #fff;
+  margin: 40px;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chart-box canvas {
+  width: 100% !important;
+  max-width: 900px;   /* largeur maximale */
+  height: 500px !important; /* hauteur du diagramme */
+}
+

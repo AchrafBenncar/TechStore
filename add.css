@@ -1,0 +1,84 @@
+body{
+  background-color: #d2d2d2;
+}
+.container{
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: #333333 ;
+  color: #f1f1f1;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow:0 5px 10px rgba(0 , 0 , 0, 0.5);
+  font-family: 'Roboto' , sans-serif;
+}
+.shake{
+  animation: shake 0.5s;
+}
+@keyframes shake{
+  33%{
+    transform: translateX(-5px);
+  }
+  66%{
+    transform: translateX(5px);
+  }
+}
+.container h2{
+  text-align: center;
+  font-size: 30px;
+}
+.input-group{
+  margin-top: 40px;
+}
+.input-group label{
+  display: block;
+  font-size: 22px;
+}
+.input-group input{
+  width: 100%;
+  position: relative;
+  padding: 15px 0;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #f1f1f1;
+  outline: 0;
+  color: #f1f1f1;
+  font-size: 16px;
+}
+.input-group input::placeholder{
+  font-size: 16px;
+}
+.input-group span{
+  color: red;
+  font-size: 11px;
+  margin-top: 7px;
+  display: none;
+}
+.fa-circle-check{
+  color: #699921;
+}
+.fa-circle-exclamation{
+  color: #c41717;
+}
+.input-group .fa-circle-check , .fa-circle-exclamation{
+  font-size:30px ;
+  position: absolute;
+  transform: translate(-20px , 10px);
+  display: none;
+}
+form button{
+  display: block;
+  margin: 50px auto 10px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  background-color: #FFA500;
+  transition: 0.5s all;
+  cursor: pointer;
+  color: #f1f1f1;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: 'Roboto' , sans-serif;
+}
+form button:hover{
+  background-color: #008000;
+}
